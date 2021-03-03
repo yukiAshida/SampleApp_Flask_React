@@ -4,13 +4,13 @@ import styled from "styled-components";
 
 export const TextBox = (props)=>{
     return ( 
-        <StyledText type="text" value={props.value} placeholder={props.label} onChange={props.onChange} width={props.width}/>
+        <StyledText type="text" value={props.value} placeholder={props.label} onChange={props.onChange} width={props.width} height={props.height}/>
     );
 }
 
 export const PasswordBox = (props)=>{
     return ( 
-        <StyledText type="password" value={props.value} placeholder={props.label} onChange={props.onChange} width={props.width}/>
+        <StyledText type="password" value={props.value} placeholder={props.label} onChange={props.onChange} width={props.width} height={props.height}/>
     );
 }
 
@@ -24,6 +24,7 @@ line-height: ${props => props.height!=undefined?props.height:"30px"};
 transition: 0.3s;
 letter-spacing: 1px;
 padding: 10px;
+margin: 10px;
 color: #000000;
 
 border: 1px solid #bbbbbb;
