@@ -24,7 +24,6 @@ export default class RootPage extends React.Component {
                 <div className="mycard flex-column-center">
                     <Button color="BLUE" onClick={(e)=>this.transPage(e, "component_samples")} width="50vw">【サンプル】コンポーネント</Button>
                     <Button color="BLUE" onClick={(e)=>this.transPage(e, "ajax_samples")} width="50vw">【サンプル】AJAX</Button>
-                    <Button color="BLUE" onClick={(e)=>this.Hello(e, "hello!!!")} width="50vw">緑</Button>
                 </div>
 
             </div>
