@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import request from 'superagent'
 import './style/index';
 
 import RootPage from './root'
 import ComponentSamplesPage from './component_samples'
-
+import AjaxSamplesPage from './ajax_samples'
 
 class Main extends React.Component {
 
@@ -36,7 +35,7 @@ class Main extends React.Component {
 
   render(){
 
-    console.log(this.state["page"])
+    console.log("page:", this.state["page"])
 
     return(
         <div id="index">
@@ -47,6 +46,9 @@ class Main extends React.Component {
             {/* component_samplesページ */}
             {this.state["page"]=="component_samples" && <ComponentSamplesPage transPage={({nextpage, update})=>this.transPage({nextpage, update})} />}
 
+            {/* component_samplesページ */}
+            {this.state["page"]=="ajax_samples" && <AjaxSamplesPage transPage={({nextpage, update})=>this.transPage({nextpage, update})} />}
+            
 
         </div>
     );

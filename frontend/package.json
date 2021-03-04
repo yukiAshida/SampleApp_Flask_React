@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
+    "axios": "^0.21.1",
     "styled-components": "^5.2.1",
     "superagent": "^6.1.0"
   }
