@@ -35,7 +35,7 @@ class Main extends React.Component {
 
   render(){
 
-    console.log("page:", this.state["page"])
+    console.log("page:", this.state["page"]);
 
     return(
         <div id="index">

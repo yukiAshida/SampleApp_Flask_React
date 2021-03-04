@@ -11,6 +11,12 @@ module.exports = {
   watchOptions: {
   	ignored: ['/node_modules/']
   },
+  
+  devServer: {
+    contentBase: __dirname + '/dist',  // index.htmlが置いてあるところ
+    publicPath: '/',
+    port: 3000,
+  },
 
   module: {
     rules: [

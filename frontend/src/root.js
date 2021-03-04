@@ -12,10 +12,6 @@ export default class RootPage extends React.Component {
         this.props.transPage({"nextpage":nextpage});
     }
 
-    Hello(e, comment){
-        alert(comment);
-    }
-
     render(){
         
         return(
